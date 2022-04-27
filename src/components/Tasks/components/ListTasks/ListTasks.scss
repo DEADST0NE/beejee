@@ -1,0 +1,31 @@
+.task-item {
+  &-header {
+    span {
+      display: block;
+      font-size: 14px;
+    }
+  }
+
+  .ant-card-body {
+    height: 400px;
+    display: -webkit-box;
+    -webkit-line-clamp: 15;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    overflow: hidden;
+  }
+}
+
+.task-item.orange .ant-card {
+  background-color: #ffa3a3bf;
+}
+
+.task-item.green .ant-card{
+  background-color: #00800036;
+}
+
+.admin-edit-info {
+  margin-top: 10px;
+  color: red;
+  font-size: 10px;
+}

@@ -1,0 +1,30 @@
+.notification {
+  background: #0c0d30 !important;
+  border-radius: 16px !important;
+
+  .ant-notification-notice-message {
+    color: #00ffd1;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  
+  .ant-notification-notice-description {
+    font-size: 18px;
+    color: #488cee;
+    padding-right: 24px;
+  }
+
+  .ant-notification-notice-close {
+    color: #fff !important;
+    transform: translate(0, 50%);
+  }
+
+  .ant-notification-close-icon {
+    font-size: 24px;
+  }
+
+  .ant-notification-notice-icon {
+    top: 10px;
+    transform: translate(0, 50%);
+  }
+}

@@ -1,0 +1,15 @@
+.task-add-btn {
+  border-radius: 3px;
+  span {
+    transition: all 0.3s;
+  }
+  .anticon {
+    color: #ff0000;
+  }
+
+  &:hover {
+    span {
+      color: #ff0000;
+    }
+  }
+}

@@ -1,0 +1,119 @@
+.login {
+  &-wrapper {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #ecdabb 0%, #ffffff 49%, #ffffff 100%);
+  }
+  &-left {
+    position: relative;
+    display: flex;
+    width: 40%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    .login-left-title-wrapper {
+      position: relative;
+      border-top: 0.5px solid #ddd;
+      margin: 0px 20px;
+      margin-bottom: 5px;
+      .login-left-title {
+        position: relative;
+        top: -13px;
+        display: block;
+        width: 100%;
+        text-align: center;
+        span {
+          padding: 0px 10px;
+          background: linear-gradient(180deg, #fbf7f0 0%, #fbf8f2 49%, #fcf9f4 100%);
+          color: #a9a9a9;
+          font-size: 13px;
+        }
+      }
+    }
+    &-content {
+      width: 50%;
+      padding-bottom: 90px;
+    }
+    &-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      margin-bottom: 55px;
+      img {
+        width: 45px;
+      }
+      span {
+        position: relative;
+        left: -2px;
+        font-size: 45px;
+        line-height: 0.9 !important;
+      }
+    }
+    &-footer {
+      position: absolute;
+      bottom: 30px;
+      left: 0;
+      width: 100%;
+      color: #a9a9a9;
+      font-size: 13px;
+      text-align: center;
+    }
+    &-body {
+      .login-form {
+        text-align: center;
+      }
+      .navigation-link {
+        display: flex;
+        justify-content: center;
+      }
+      .ant-form-item-explain {
+        margin-bottom: 5px;
+        text-align: start;
+      }
+      .ant-form-item-control input {
+        padding: 3px 0px !important;
+        padding-left: 5px !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .login-left-body {
+    .navigation-link {
+      a {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .login-left {
+    width: 100%;
+    .login-left-content {
+      width: 75%;
+      padding-bottom: 0px;
+    }
+    .navigation-link a {
+      padding: 5px 5px;
+      font-size: 11px;
+    }
+    .ant-form-item-control input {
+      padding: 0px !important;
+      font-size: 14px;
+    }
+    .ant-btn-primary {
+      height: 35px;
+      padding: 0px 0px;
+    }
+    .ant-form-item-explain {
+      font-size: 13px;
+    }
+    .submit-content {
+      margin-bottom: 10px;
+    }
+  }
+}
