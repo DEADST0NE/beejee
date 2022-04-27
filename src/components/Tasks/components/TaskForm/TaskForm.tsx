@@ -20,9 +20,10 @@ interface TaskFormProps {
 const TaskForm = ({ defautData, loading, onFinish }: TaskFormProps) => {
   const [form] = Form.useForm();
 
+  form.resetFields();
   useEffect(() => {
     form.resetFields();
-  }, [defautData?.id]);
+  }, [defautData]);
 
   return (
     <Form
